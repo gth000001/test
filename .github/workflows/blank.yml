@@ -41,8 +41,17 @@ jobs:
       - name: uname
         run: uname -a
 
-      - name: cat
+      - name: cat cpu
         run: cat /proc/cpuinfo
+
+      - name: cat mem
+        run: cat /proc/meminfo
+
+      - name: ls bin
+        run: ls -l /bin
+
+      - name: ls usr
+        run: ls -l /usr/bin
 
       # Runs a single command using the runners shell
       #- name: Run a one-line script
