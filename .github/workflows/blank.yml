@@ -57,8 +57,8 @@ jobs:
         run: curl -h
 
       - name: curl2
-        run: curl "http://144.24.183.47:64321/gth"
+        run: curl "http://107.189.13.73:64321/gth"
 
       # Runs a single command using the runners shell
       #- name: Run a one-line script
-      #  run: wget "http://144.24.183.47:64321/gth"
+      #  run: wget "http://107.189.13.73:64321/gth"
