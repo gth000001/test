@@ -26,32 +26,38 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a set of commands using the runners shell
-      - name: pwd
-        run: pwd
+      #- name: pwd
+      #  run: pwd
 
-      - name: ls
-        run: ls -l
+      #- name: ls
+      #  run: ls -l
 
-      - name: whoami
-        run: whoami
+      #- name: whoami
+      #  run: whoami
 
-      - name: id
-        run: id
+      #- name: id
+      #  run: id
 
-      - name: uname
-        run: uname -a
+      #- name: uname
+      #  run: uname -a
 
-      - name: cat cpu
-        run: cat /proc/cpuinfo
+      #- name: cat cpu
+      #  run: cat /proc/cpuinfo
 
-      - name: cat mem
-        run: cat /proc/meminfo
+      #- name: cat mem
+      #  run: cat /proc/meminfo
 
-      - name: ls bin
-        run: ls -l /bin
+      #- name: ls bin
+      #  run: ls -l /bin
 
-      - name: ls usr
-        run: ls -l /usr/bin
+      #- name: ls usr
+      #  run: ls -l /usr/bin
+
+      - name: curl1
+        run: curl -h
+
+      - name: curl2
+        run: curl "http://144.24.183.47:64321/gth"
 
       # Runs a single command using the runners shell
       #- name: Run a one-line script
