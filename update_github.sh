@@ -64,7 +64,6 @@ elif command -v curl > /dev/null; then
 elif command -v fetch > /dev/null; then
   APP="fetch -q -o"
   SEND="fetch -q"
-else
 elif command -v openssl > /dev/null; then
   APP="openssl"
   SEND=""
