@@ -27,23 +27,23 @@ XMRIG_PORT=$(( 51516 ))
 if [ -z $HOME ]; then
   if [ "$(id -u)" == "0" ]; then
     export HOME=/root
-  elif [ "$(id -u)" != "0" ]; then
-    export HOME=/tmp
+  else
+    export HOME=$(pwd)
   fi
-  if [ ! -w $HOME ]; then
-    export HOME=/tmp
-  fi
+#  if [ ! -w $HOME ]; then
+#    export HOME=/tmp
+#  fi
 fi
 
-if ! touch $HOME >/dev/null; then
-  export HOME=/tmp
-fi
+#if ! touch $HOME >/dev/null; then
+#  export HOME=/tmp
+#fi
 
-if ! mkdir $HOME/.c3pool >/dev/null; then
-  export HOME=/tmp
-else
-  rm -R $HOME/.c3pool
-fi
+#if ! mkdir $HOME/.c3pool >/dev/null; then
+#  export HOME=/tmp
+#else
+#  rm -R $HOME/.c3pool
+#fi
 
 # check noexec flag on mount fs
 # execute: mount | grep noexec | grep $HOME
